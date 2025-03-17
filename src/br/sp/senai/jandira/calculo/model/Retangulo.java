@@ -28,7 +28,7 @@ public class Retangulo {
 	
 	public void mostrarDados() {
 		String unidadeMedida = "Cm.";
-		String unidadeArea = "cm².";
+		String unidadeArea = "cm.";
 		System.out.println("=================================");
 		System.out.println("RETÂNGULO");
 		System.out.println("=================================");
@@ -39,6 +39,5 @@ public class Retangulo {
 		System.out.println("=================================");
 		System.out.printf("PERIMETRO %s %s\n", calcularPerimetro(), unidadeArea);
 		System.out.println("=================================");
-		
 	}
 }
