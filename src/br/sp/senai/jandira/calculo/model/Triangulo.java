@@ -1,25 +1,32 @@
 package br.sp.senai.jandira.calculo.model;
 
 public class Triangulo {
-	private double base;
-	private double altura;
+	public double ladoA;
+	public double ladoB;
+	public double ladoC;
 	
-	public void setBase(double base) {
-		this.base = base;
-	}
-	
-	public void setAltura(double altura) {
-		this.altura = altura;
-	}
-	
-	public double getAltura(double altura) {
-		return altura;
-	}
-	
-	public double calcularArea() {
-		double area = (base * altura) /2;
-		return area;
-	}
+	public void tipoTriangulo() {
+
+		if (ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB) {
+
+		if (ladoA == ladoB && ladoB == ladoC) {
+
+		System.out.println("É um triângulo EQUILÁTERO!");
+
+		} else if (ladoA != ladoB && ladoB != ladoC) {
+
+		System.out.println("É um triângulo ESCALENO!");
+
+		} else {
+
+		System.out.println("É um triângulo ISÓSCELES!");
+
+		}
+
+		} else {
+
+		System.out.println("As medidas informadas não são de um triângulo!");
+}
 	
 	public void mostrarDados() {
 		String unidadeMedida = "Cm.";

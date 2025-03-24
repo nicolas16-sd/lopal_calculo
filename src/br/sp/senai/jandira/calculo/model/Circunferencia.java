@@ -1,5 +1,4 @@
 package br.sp.senai.jandira.calculo.model;
-import java.text.DecimalFormat;
 
 public class Circunferencia {
 	
